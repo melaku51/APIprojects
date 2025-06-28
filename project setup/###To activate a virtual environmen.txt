@@ -1,0 +1,27 @@
+###To activate a virtual environment (venv) on Windows 11, follow these steps:###
+1.Navigate to your project directory:Open Command Prompt or PowerShell and navigate to the folder where your virtual environment is located.
+
+   cd path\to\your\project   
+Example:C:\Users\melak\Desktop\fastAPI-project>
+
+2.Activate the virtual environment: Use the following command to activate the virtual environment. Replace venv with the name of your virtual environment folder if it's different.
+
+For Command Prompt:   venv\Scripts\activate
+
+For PowerShell:    .\venv\Scripts\Activate.ps1
+
+3.Verify activation: Once activated, you should see the virtual environment's name in parentheses at the beginning of the command line, e.g., (venv).
+4.To Deactivate when done: To deactivate the virtual environment, simply run:  deactivate
+
+
+###IF the activation fail use command###
+1.Open PowerShell as Administrator:
+
+2.Check the current execution policy:
+C:\Users\melak\Desktop\fastAPI-project> Get-ExecutionPolicy
+Restricted
+
+3.Set the execution policy to allow scripts: 
+C:\Users\melak\Desktop\fastAPI-project> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+3. C:\Users\melak\Desktop\fastAPI-project> .\venv\Scripts\Activate.ps1
